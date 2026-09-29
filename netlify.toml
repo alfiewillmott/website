@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/offer"
+  to = "/Website%20Offer.dc.html"
+  status = 200
+
+[[headers]]
+  for = "/Website%20Offer.dc.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
